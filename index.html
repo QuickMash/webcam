@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .cam {
+        border: none;    
+        }
+        body {
+background-color: #333;
+            color: white;
+        }
+    </style>
     <title>Home</title>
 </head>
 <body>
 <h1>Feaured Camera</h1>
 <p>ID: 1</p>
     <!-- Embed the video stream from your ESP32-CAM -->
-    <iframe src="http://<ESP32-CAM-IP>/video" width="640" height="480"></iframe>
+    <iframe class="cam" src="http://<ESP32-CAM-IP>/video" width="640" height="480"></iframe>
 <h2>About this cam</h2>
 <p>I don't know...</p>
 </body>
